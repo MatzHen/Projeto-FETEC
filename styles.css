@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Alterado de height para min-height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://i.pinimg.com/originals/12/b2/3a/12b23a7752e8a7a4464c1ff5e596237f.gif");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-y: auto; /* Permite rolagem vertical */
+}
+ 
+#app {
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Evita rolagem dentro do container */
+    align-items:center ;
+    justify-content: center;
+}
+ 
+.hidden {
+    display: none;
+    align-items: center;
+}
+ 
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+/* Alinhamento das perguntas e opções */
+#questions-part1 div,
+#questions-part2 div {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+ 
+label {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+ 
+/* Estilo dos botões */
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    transition: 0.3s ease;
+}
+ 
+button:hover {
+    background-color: #0056b3;
+}
+ 
+/* Alinhar as respostas em linha */
+input[type="radio"] {
+    margin-right: 10px;
+}
+ 
+/* Adicionar espaçamento e organização entre os grupos de perguntas */
+#questions-part1 div,
+#questions-part2 div {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+ 
+#questions-part1 div:hover,
+#questions-part2 div:hover {
+    background-color: #f1f1f1;
+}
+ 
+/* Responsividade */
+@media (max-width: 1200px) {
+    #app {
+        padding: 15px;
+    }
+ 
+    button {
+        font-size: 14px;
+    }
+}
+ 
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+ 
+#start-part1:hover {
+    animation: pulse 2.0s infinite;
+}
+ 
+#submit-part1:hover {
+    background-color: #005f7f;
+    transform: translateY(-3px);
+}
+ 
+img {
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    display: block;
+    justify-content: center;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+ 
+div {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+ 
+/* Ajustar para que o conteúdo não seja cortado */
+html, body {
+    overflow-y: auto; /* Garantir rolagem quando necessário */
+}
+#instructions{
+    align-items: center;
+}
+#confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.confetti {
+    position: absolute;
+    background-color: #FF0;
+    width: 10px;
+    height: 10px;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+.fade {
+    animation: fadeOut 0.5s forwards;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
