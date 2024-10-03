@@ -89,9 +89,9 @@ document.addEventListener('DOMContentLoaded', function () {
         // Exibe o resultado na página
         let details = {
             "Sanguíneo": "Você é Sanguíneo. <br> Pessoas com temperamento sanguíneo são mais enérgicas e gostam de estar sempre ocupadas.",
-            "Colérico": "Você é Colérico. <br> A pessoa com temperamento colérico é dominante e independente...",
-            "Fleumático": "Você é Fleumático. <br> A pessoa com temperamento fleumático é estável e equilibrada...",
-            "Melancólico": "Você é Melancólico. <br> Temperamento Melancólico e suas características..."
+            "Colérico": "Você é Colérico. <br> As características definidoras de pessoas coléricas são dominantes e assertivas . Pessoas que pertencem a esse tipo de temperamento são orientadas a objetivos e motivadas. Elas são grandes realizadoras no trabalho, na escola ou até mesmo no lazer e são frequentemente selecionadas como líderes de equipe. ",
+            "Fleumático": "Você é Fleumático. <br> Descontraído é a palavra que provavelmente vem à mente ao encontrar uma pessoa fleumática imediatamente.  Pessoas do temperamento fleumático são confiáveis ​​e pacientes que encontram conforto no mundano e na rotina. ",
+            "Melancólico": "Você é Melancólico. <br> Pessoas com temperamento melancólico são introvertidas, sensíveis e profundas. Elas são perfeccionistas e gostam de trabalhar sozinhas."
         };
     
         temperamentDetails.innerHTML = details[temperament] || '<p>Temperamento não identificado.</p>';
