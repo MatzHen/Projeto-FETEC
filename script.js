@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
     
         temperamentDetails.innerHTML = details[temperament] || '<p>Temperamento não identificado.</p>';
-    
+        
         // Define a imagem correspondente ao temperamento
         const imgElement = document.getElementById('temperament-img');
         const imgContainer = document.getElementById('temperament-image');
@@ -150,7 +150,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
     document.getElementById("start-part1").addEventListener("click", function() {
-        // Esconde as instruções com fade-out
         const instructions = document.getElementById("instructions");
         instructions.classList.add("fade");
     
@@ -163,4 +162,3 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
- 
