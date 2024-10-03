@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function showResult() {
         let countA1 = 0, countB1 = 0;
         let countA2 = 0, countB2 = 0;
- 
+    
         // Contabiliza as respostas da Primeira Parte
         for (let i = 1; i <= 19; i++) {
             let answer = document.querySelector(`input[name="q${i}"]:checked`);
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 answer.value === 'A' ? countA1++ : countB1++;
             }
         }
- 
+    
         // Contabiliza as respostas da Segunda Parte
         for (let i = 20; i <= 32; i++) {
             let answer = document.querySelector(`input[name="q${i}"]:checked`);
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 answer.value === 'A' ? countA2++ : countB2++;
             }
         }
- 
+    
         // Determina o temperamento com base nas contagens
         let temperament = '';
         if (countA1 > countB1 && countA2 > countB2) {
@@ -85,16 +85,41 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (countB1 > countA1 && countB2 > countA2) {
             temperament = "Melancólico";
         }
- 
+    
         // Exibe o resultado na página
         let details = {
-            "Sanguíneo": "Você é Sanguíneo. <br> A classificação defende que os donos desse temperamento possuem mais sangue no corpo e, por isso, maior sensibilidade, por exemplo. Por ter muita energia e extroversão, os sanguíneos também são muito alegres e sociáveis. Por outro lado, o temperamento também se manifesta em momentos de ansiedade, insegurança e falta de disciplina e organização.",
-            "Colérico": "Você é Colérico. <br> A pessoa com temperamento colérico é dominante e independente. Líder nato cheio de energia resolve os problemas, transformando ideias em fatos reais. Outras características marcantes são a impetuosidade, força de vontade, praticidade e a confiança. É um indivíduo extrovertido, mas não tanto quanto a pessoa de temperamento sangüíneo.",
-            "Fleumático": "Você é Fleumático. <br> A pessoa com temperamento fleumático é estável e equilibrada. De fácil convivência, é o mais agradável de todos os temperamentos. Outras características marcantes são a lealdade, diplomacia, eficiência e o ceticismo. O fleumático é introvertido e pouco falante.",
-            "Melancólico": "Você é Melancólico. <br> Temperamento Melancólico e suas características A pessoa com temperamento melancólico é sensível e analítica. Um pensador profundo voltado para si, sendo muito exigente consigo mesmo e vivendo em constante autoanálise. Outras características marcantes são o perfeccionismo, altruísmo, criatividade e a cautela."
+            "Sanguíneo": "Você é Sanguíneo. <br> Pessoas com temperamento sanguíneo são mais enérgicas e gostam de estar sempre ocupadas.",
+            "Colérico": "Você é Colérico. <br> A pessoa com temperamento colérico é dominante e independente...",
+            "Fleumático": "Você é Fleumático. <br> A pessoa com temperamento fleumático é estável e equilibrada...",
+            "Melancólico": "Você é Melancólico. <br> Temperamento Melancólico e suas características..."
         };
- 
+    
         temperamentDetails.innerHTML = details[temperament] || '<p>Temperamento não identificado.</p>';
+    
+        // Define a imagem correspondente ao temperamento
+        const imgElement = document.getElementById('temperament-img');
+        const imgContainer = document.getElementById('temperament-image');
+    
+        switch (temperament) {
+            case "Sanguíneo":
+                imgElement.src = "https://andrewsilva.com.br/wp-content/uploads/2024/04/Caracteristicas-do-Temperamento-Sanguineo.png"; // Substitua pelo caminho da sua imagem
+                break;
+            case "Colérico":
+                imgElement.src = "https://andrewsilva.com.br/wp-content/uploads/2024/04/Caracteristicas-do-Temperamento-Colerico.png"; // Substitua pelo caminho da sua imagem
+                break;
+            case "Fleumático":
+                imgElement.src = "https://andrewsilva.com.br/wp-content/uploads/2024/04/Caracteristicas-do-Temperamento-Fleumatico.png"; // Substitua pelo caminho da sua imagem
+                break;
+            case "Melancólico":
+                imgElement.src = "Pessoas com temperamento melancólico são introvertidas, sensíveis e profundas. Elas são perfeccionistas e gostam de trabalhar sozinhas."; // Substitua pelo caminho da sua imagem
+                break;
+            default:
+                imgElement.src = ""; // Caso não identifique um temperamento
+                break;
+        }
+    
+        // Mostra a imagem
+        imgContainer.classList.remove('hidden');
     }
     document.getElementById('submit-part2').addEventListener('click', function() {         document.getElementById('part2').classList.remove('hidden'); });
 
