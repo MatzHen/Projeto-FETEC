@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 imgElement.src = "./img/fleumatico.jpeg"; // Substitua pelo caminho da sua imagem
                 break;
             case "Melancólico":
-                imgElement.src = "./img/melancolico.jpeg."; // Substitua pelo caminho da sua imagem
+                imgElement.src = "./img/melancolico.jpeg"; // Substitua pelo caminho da sua imagem
                 break;
             default:
                 imgElement.src = ""; // Caso não identifique um temperamento
