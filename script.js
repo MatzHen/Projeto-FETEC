@@ -88,10 +88,10 @@ document.addEventListener('DOMContentLoaded', function () {
     
         // Exibe o resultado na página
         let details = {
-            "Sanguíneo": "Você é Sanguíneo. <br> Extrovertido e envolvente, voltado para os relacionamentos interpessoais. É comunicativo, dinâmico e otimista. Suas emoções são intensas, mas as impressões são passageiras, o que faz com que mude de humor com bastante frequência e as expressões dessa mudança são muito intensas (quando está triste, está muito triste; quando feliz, muito feliz; quando com raiva, com muita raiva, etc). Não se apega ao passado e vive muito o presente, o que pode fazer com que busque prazeres instantâneos e momentâneos, por isso, precisa tomar cuidado com a superficialidade. Carismático, não falta assunto, faz amizades facilmente.",
-            "Colérico": "Você é Colérico. <br> Muito prático, voltado para a execução e realização. Sua extroversão não é para relacionamentos, mas para a ação. Enérgico, determinado, com facilidade enorme para atingir metas e perseguir objetivos. Não se preocupa com o que pensam dele, o que importa é o que ele sabe sobre si. Cheio de opiniões e não tem medo de expô-las, considerado gênio forte. As impressões são duradouras nele e, por isso, as lembranças fazem com que ele reviva as emoções, tendo dificuldade em relevar. Gosta das coisas do seu jeito, por isso precisa cuidar para não ser controlador. ",
-            "Fleumático": "Você é Fleumático. <br> Introvertido, diplomático e de fácil convivência. Pode não apreciar mudanças abruptas, mas consegue se adaptar facilmente a diferentes cenários com muita facilidade. Possui grande estabilidade emocional, dificilmente atingindo picos de humor muito distintos em um único dia. Transmite serenidade em seu jeito de ser, ainda que não se sinta assim por dentro. As impressões também são passageiras nele, mas não significa que sua memória seja curta. A fácil adaptação deve ser observada para que não se torne em estagnação e inércia. ",
-            "Melancólico": "Você é Melancólico. <br> Introvertido, reflexivo e profundo, muito cauteloso em suas ações e planejado. É emocionalmente sensível, sendo afetado pelas circunstâncias por um longo período. Gosta de estabilidade, previsibilidade, ordem e compromisso. A lealdade é um de seus pontos mais fortes, além do forte senso de dever e propósito. Leva a vida com seriedade e possui valores e princípios muito fortes. Não gosta de mudanças não planejadas e, quando acontecem, costuma sofrer até que assimile a mudança. É idealista e perfeccionista, que são qualidades que devem ser observadas, pois em excesso, causam medo de agir, que leva à procrastinação ou à desistência."
+            "Sanguíneo": "<b>Você é Sanguíneo.</b> <br> Extrovertido e envolvente, voltado para os relacionamentos interpessoais. É comunicativo, dinâmico e otimista. Suas emoções são intensas, mas as impressões são passageiras, o que faz com que mude de humor com bastante frequência e as expressões dessa mudança são muito intensas (quando está triste, está muito triste; quando feliz, muito feliz; quando com raiva, com muita raiva, etc). Não se apega ao passado e vive muito o presente, o que pode fazer com que busque prazeres instantâneos e momentâneos, por isso, precisa tomar cuidado com a superficialidade. Carismático, não falta assunto, faz amizades facilmente.",
+            "Colérico": "<b>Você é Colérico.</b> <br> Muito prático, voltado para a execução e realização. Sua extroversão não é para relacionamentos, mas para a ação. Enérgico, determinado, com facilidade enorme para atingir metas e perseguir objetivos. Não se preocupa com o que pensam dele, o que importa é o que ele sabe sobre si. Cheio de opiniões e não tem medo de expô-las, considerado gênio forte. As impressões são duradouras nele e, por isso, as lembranças fazem com que ele reviva as emoções, tendo dificuldade em relevar. Gosta das coisas do seu jeito, por isso precisa cuidar para não ser controlador. ",
+            "Fleumático": "<b>Você é Fleumático.</b> <br> Introvertido, diplomático e de fácil convivência. Pode não apreciar mudanças abruptas, mas consegue se adaptar facilmente a diferentes cenários com muita facilidade. Possui grande estabilidade emocional, dificilmente atingindo picos de humor muito distintos em um único dia. Transmite serenidade em seu jeito de ser, ainda que não se sinta assim por dentro. As impressões também são passageiras nele, mas não significa que sua memória seja curta. A fácil adaptação deve ser observada para que não se torne em estagnação e inércia. ",
+            "Melancólico": "<b>Você é Melancólico.</b> <br> Introvertido, reflexivo e profundo, muito cauteloso em suas ações e planejado. É emocionalmente sensível, sendo afetado pelas circunstâncias por um longo período. Gosta de estabilidade, previsibilidade, ordem e compromisso. A lealdade é um de seus pontos mais fortes, além do forte senso de dever e propósito. Leva a vida com seriedade e possui valores e princípios muito fortes. Não gosta de mudanças não planejadas e, quando acontecem, costuma sofrer até que assimile a mudança. É idealista e perfeccionista, que são qualidades que devem ser observadas, pois em excesso, causam medo de agir, que leva à procrastinação ou à desistência."
         };
     
         temperamentDetails.innerHTML = details[temperament] || '<p>Temperamento não identificado.</p>';
@@ -102,16 +102,16 @@ document.addEventListener('DOMContentLoaded', function () {
     
         switch (temperament) {
             case "Sanguíneo":
-                imgElement.src = "./img/sanguineo.jpeg"; // Substitua pelo caminho da sua imagem
+                imgElement.src = "/img/sanguineo.jpeg"; // Substitua pelo caminho da sua imagem
                 break;
             case "Colérico":
-                imgElement.src = "./img/colerico.jpeg"; // Substitua pelo caminho da sua imagem
+                imgElement.src = "/img/colerico.jpeg"; // Substitua pelo caminho da sua imagem
                 break;
             case "Fleumático":
-                imgElement.src = "./img/fleumatico.jpeg"; // Substitua pelo caminho da sua imagem
+                imgElement.src = "/img/fleumatico.jpeg"; // Substitua pelo caminho da sua imagem
                 break;
             case "Melancólico":
-                imgElement.src = "./img/melancolico.jpeg."; // Substitua pelo caminho da sua imagem
+                imgElement.src = "/img/melancolico.jpeg."; // Substitua pelo caminho da sua imagem
                 break;
             default:
                 imgElement.src = ""; // Caso não identifique um temperamento
