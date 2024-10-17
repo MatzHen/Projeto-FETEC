@@ -102,16 +102,16 @@ document.addEventListener('DOMContentLoaded', function () {
     
         switch (temperament) {
             case "Sanguíneo":
-                imgElement.src = "https://andrewsilva.com.br/wp-content/uploads/2024/04/Caracteristicas-do-Temperamento-Sanguineo.png"; // Substitua pelo caminho da sua imagem
+                imgElement.src = "./img/sanguineo.jpeg"; // Substitua pelo caminho da sua imagem
                 break;
             case "Colérico":
-                imgElement.src = "https://andrewsilva.com.br/wp-content/uploads/2024/04/Caracteristicas-do-Temperamento-Colerico.png"; // Substitua pelo caminho da sua imagem
+                imgElement.src = "./img/colerico.jpeg"; // Substitua pelo caminho da sua imagem
                 break;
             case "Fleumático":
-                imgElement.src = "https://andrewsilva.com.br/wp-content/uploads/2024/04/Caracteristicas-do-Temperamento-Fleumatico.png"; // Substitua pelo caminho da sua imagem
+                imgElement.src = "./img/fleumatico.jpeg"; // Substitua pelo caminho da sua imagem
                 break;
             case "Melancólico":
-                imgElement.src = "Pessoas com temperamento melancólico são introvertidas, sensíveis e profundas. Elas são perfeccionistas e gostam de trabalhar sozinhas."; // Substitua pelo caminho da sua imagem
+                imgElement.src = "./img/melancolico.jpeg."; // Substitua pelo caminho da sua imagem
                 break;
             default:
                 imgElement.src = ""; // Caso não identifique um temperamento
