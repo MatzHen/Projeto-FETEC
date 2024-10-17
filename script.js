@@ -102,16 +102,16 @@ document.addEventListener('DOMContentLoaded', function () {
     
         switch (temperament) {
             case "Sanguíneo":
-                imgElement.src = "/img/sanguineo.jpeg"; // Substitua pelo caminho da sua imagem
+                imgElement.src = "./img/sanguineo.jpeg"; // Substitua pelo caminho da sua imagem
                 break;
             case "Colérico":
-                imgElement.src = "/img/colerico.jpeg"; // Substitua pelo caminho da sua imagem
+                imgElement.src = "./img/colerico.jpeg"; // Substitua pelo caminho da sua imagem
                 break;
             case "Fleumático":
-                imgElement.src = "/img/fleumatico.jpeg"; // Substitua pelo caminho da sua imagem
+                imgElement.src = "./img/fleumatico.jpeg"; // Substitua pelo caminho da sua imagem
                 break;
             case "Melancólico":
-                imgElement.src = "/img/melancolico.jpeg."; // Substitua pelo caminho da sua imagem
+                imgElement.src = "./img/melancolico.jpeg."; // Substitua pelo caminho da sua imagem
                 break;
             default:
                 imgElement.src = ""; // Caso não identifique um temperamento
